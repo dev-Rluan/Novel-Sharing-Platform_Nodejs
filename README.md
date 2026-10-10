@@ -1,6 +1,10 @@
-# Your_Fantasy
+# Novel-Sharing-Platform_Nodejs
 
-Nodejs를 이용한 웹 소설 공유 플랫폼 개인프로젝트
+Node.js로 만든 웹 소설 공유 플랫폼 **Your_Fantasy**의 개인 프로젝트 기록입니다. Express·EJS·MySQL을 사용하며 기존 개발 기간과 설계 자료를 함께 보관합니다.
+
+- [애플리케이션](dev/yfantasy): 서버·라우터·화면
+- [DB 정의](DB.md) · [페이지 정의](page.md)
+- [개발 진행 기록](진행.md)
 
 ## 사용 스택
 - front-end : ejs, bootstrap
@@ -14,13 +18,26 @@ Nodejs를 이용한 웹 소설 공유 플랫폼 개인프로젝트
 - 2022.06.06 ~ 2022.06.10 : 종료
 
 ## DB 정의
-https://github.com/Rwhisper/Novel-Sharing-Platform_Nodejs/blob/main/DB.md
+[DB.md](DB.md)
 
 ## 페이지(사용자 인터페이스) 정의
-https://github.com/Rwhisper/Novel-Sharing-Platform_Nodejs/blob/main/page.md
+[page.md](page.md)
 
-## 사용
-- dev/yfantasy 에서 
-- npm i 명령어를 사용해 package.json파일에있는 모듈들을 다운받아준다.
+## 로컬 실행
+
+Node.js와 npm을 준비한 뒤 앱 디렉터리에서 의존성을 설치합니다.
+
+```bash
+cd dev/yfantasy
+npm install
+```
+
 - 연결한 mysql 접속정보를 db_info와 app.js의  option에 넣고 mysql db에 noveldb데이터베이스를 만들어 테이블을 만들어준다.
-- npm start로 프로젝트를 실행하고 브라우저에서 동작을 확인한다.
+
+설정 후 아래 명령으로 실행합니다.
+
+```bash
+npm start
+```
+
+기본 주소는 `http://localhost:3000`이며 `PORT` 환경변수로 포트를 바꿀 수 있습니다.
